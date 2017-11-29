@@ -1,0 +1,53 @@
+Wades-MacBook-Pro:~ wadestewart$ mkdir House
+Wades-MacBook-Pro:~ wadestewart$ cd House
+Wades-MacBook-Pro:House wadestewart$ touch Dorothy Toto
+Wades-MacBook-Pro:House wadestewart$ ls
+DorothyToto
+Wades-MacBook-Pro:House wadestewart$ mkdir Oz
+Wades-MacBook-Pro:House wadestewart$ cd Oz
+Wades-MacBook-Pro:Oz wadestewart$ touch Good\ Witch\ of\ the\ North Wicked\ Witch\ of\ the\ East
+Wades-MacBook-Pro:Oz wadestewart$ ls
+Good Witch of the NorthWicked Witch of the East
+Wades-MacBook-Pro:Oz wadestewart$ touch Good\ Witch\ of\ the\ South Wicked\ Witch\ of\ the\ West
+Wades-MacBook-Pro:Oz wadestewart$ ls
+Good Witch of the NorthGood Witch of the SouthWicked Witch of the EastWicked Witch of the West
+Wades-MacBook-Pro:Oz wadestewart$ rm Wicked\ Witch\ of\ the\ South
+rm: Wicked Witch of the South: No such file or directory
+Wades-MacBook-Pro:Oz wadestewart$ rm Wicked\ Witch\ of\ the\ East
+Wades-MacBook-Pro:Oz wadestewart$ ls
+Good Witch of the NorthGood Witch of the SouthWicked Witch of the West
+Wades-MacBook-Pro:Oz wadestewart$ mv ~/Oz/Dorothy ~/House/Oz
+mv: rename /Users/wadestewart/Oz/Dorothy to /Users/wadestewart/House/Oz/Dorothy: No such file or directory
+Wades-MacBook-Pro:Oz wadestewart$ mv ~/House/Dorothy ~/House/Oz
+Wades-MacBook-Pro:Oz wadestewart$ ls
+DorothyGood Witch of the NorthGood Witch of the SouthWicked Witch of the West
+Wades-MacBook-Pro:Oz wadestewart$ touch Scarecrow Tin\ Man Cowardly\ Lion
+Wades-MacBook-Pro:Oz wadestewart$ ls
+Cowardly LionGood Witch of the NorthScarecrowWicked Witch of the West
+DorothyGood Witch of the SouthTin Man
+Wades-MacBook-Pro:Oz wadestewart$ cd Emerald City
+-bash: cd: Emerald: No such file or directory
+Wades-MacBook-Pro:Oz wadestewart$ cd Emerald\ City
+-bash: cd: Emerald City: No such file or directory
+Wades-MacBook-Pro:Oz wadestewart$ mkdir Emerald\ City
+Wades-MacBook-Pro:Oz wadestewart$ ls
+Cowardly LionEmerald CityGood Witch of the SouthTin Man
+DorothyGood Witch of the NorthScarecrowWicked Witch of the West
+Wades-MacBook-Pro:Oz wadestewart$ mv Dorothy Tin\ Man Cowardly\ Lion Scarecrow ~/House/Oz/Emerald\ City
+Wades-MacBook-Pro:Oz wadestewart$ cd Emerald\ City
+Wades-MacBook-Pro:Emerald City wadestewart$ ls
+Cowardly LionDorothyScarecrowTin Man
+Wades-MacBook-Pro:Emerald City wadestewart$ cd ../
+Wades-MacBook-Pro:Oz wadestewart$ touch Flying\ Monkeys
+Wades-MacBook-Pro:Oz wadestewart$ rm Wicked\ Witch\ of\ the\ West
+Wades-MacBook-Pro:Oz wadestewart$ ls
+Emerald CityFlying MonkeysGood Witch of the NorthGood Witch of the South
+Wades-MacBook-Pro:Oz wadestewart$ cd Emerald\ City
+Wades-MacBook-Pro:Emerald City wadestewart$ ls
+Cowardly LionDorothyScarecrowTin Man
+Wades-MacBook-Pro:Emerald City wadestewart$ echo  >> Scarecrow
+Wades-MacBook-Pro:Emerald City wadestewart$ ls
+Cowardly LionDorothyScarecrowTin Man
+Wades-MacBook-Pro:Emerald City wadestewart$ echo  Shaped Watch >> Tin\ Man
+Wades-MacBook-Pro:Emerald City wadestewart$ echo  >> Lion
+Wades-MacBook-Pro:Emerald City wadestewart$
